@@ -3,6 +3,13 @@ class Chkk < Formula
   homepage "https://chkk.io"
   version "0.0.1"
 
+  bottle do
+    root_url "https://ghcr.io/v2/chkk-io/cli"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "cb71aa29501d5c9e7fc84c2756fca35ff303364b05ef99b409830b8146b4b32e"
+    sha256 cellar: :any_skip_relocation, ventura:       "bd8bb6c82e297f2e66f27cdeb3fe008f9890a91b2f1e1c4229f70f7d5e0c60fa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aa6b1a888e1f3101f3a3a66f3b79a5d0a615954ca95d0c304c2f01e4982fbd54"
+  end
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://cli.chkk.io/download/v#{version}/chkk-darwin-arm64"
