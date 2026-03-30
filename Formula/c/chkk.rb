@@ -5,8 +5,8 @@ class Chkk < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/chkk-io/cli"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ed5d2bdc13b198973f828892ed1f3bcc2396767119978f9cd3e40f5b4211dafe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "84afd5fc9fcdeda5e28b96d91c64ff0078471c8df663acd216e4717da96dbcbf"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b9a2b29f68062e382762a559947c43e71fc9dd62872769e470ca815bbab11d1d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6193c664bc31692cdab498b7e7cc39dd2c4ff6a6971f486df6f9a52a09282157"
   end
 
   on_macos do
