@@ -1,7 +1,7 @@
 class Chkk < Formula
   desc "Your Upgrade Copilot for k8s, Add-ons, Application services & 100s of Projects"
   homepage "https://chkk.io"
-  version "0.0.20"
+  version "0.0.21"
 
   bottle do
     root_url "https://ghcr.io/v2/chkk-io/cli"
@@ -12,24 +12,24 @@ class Chkk < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://cli.chkk.io/download/v#{version}/chkk-darwin-arm64"
-      sha256 "44573ed7c7e85f7b4c039eb6b0338c2dac5abf8f0dc31061d6db3151e58fa380"
+      sha256 "dd597d157f65bf6168d2409ec26391b3f5133f3cdd39d766bfa4bbb28de03291"
     end
 
     if Hardware::CPU.intel?
       url "https://cli.chkk.io/download/v#{version}/chkk-darwin-amd64"
-      sha256 "23cdddf831e0e99f59ac1ae1ee5b5ee1dc137a2e347cee03eae82a94dbf1af9e"
+      sha256 "5ee5f69c9c83073d6d32abb4a670808ada0e150aa47038a5de9833e3f183d8e6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://cli.chkk.io/download/v#{version}/chkk-linux-amd64"
-      sha256 "6c8ccae8467a0d5e73e817030ad65d55870f154ba8fcb6be9ef5d390d747b9b7"
+      sha256 "375109438570033b62bd3539805087c831b52c6ccbf29662d4f62d30528f8a4d"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://cli.chkk.io/download/v#{version}/chkk-linux-arm64"
-      sha256 "2e5c12753f2d99276b4a819d51763da865a90bdee7baceb202c06b92f583a900"
+      sha256 "f4ea3568d6a4a8d51c7ae6a42d294e551e6209c6f3844930bfac09c65731356c"
     end
   end
 
